@@ -1,0 +1,93 @@
+/* @media (){} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, black 10%, transparent 50%), url('./images/mountain-background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+  position: sticky;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 4rem;
+  margin-top: 8rem;
+}
+
+#inspiration_h {
+  font-size: 3.75rem;
+}
+
+.inspiration h4 {
+    color: #fffbfb
+    
+}
+
+.image-stack img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+
+.image1,
+.image2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10rem;
+  margin-right: 6rem;
+}
+
+.image1 {
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+.image2 {
+  top: 200px;
+  right: 160px;
+  z-index: 2;
+}
